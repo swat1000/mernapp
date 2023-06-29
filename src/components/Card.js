@@ -5,7 +5,7 @@ export default function Card() {
         <div>
             <div>
                 <div class="card mt-3" style={{ "width": "18rem", "maxHeight": "360px" }}>
-                    <img src="https://source.unsplash.com/random/100×00/?pizza" class="card-img-top" alt="..." />
+                    <img src="https://source.unsplash.com/random/300×300/?food" style={{maxHeight: '200px', maxWidth: '300px'}} class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Try the new craving</p>

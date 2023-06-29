@@ -11,13 +11,13 @@ export default function Carousel() {
                     </form>
                 </div>
                 <div class="carousel-item active">
-                    <img src="https://source.unsplash.com/random/500×700/?paneer" class="d-block w-100" alt="..." />
+                    <img src="https://source.unsplash.com/random/500×700/?food" class="d-block w-100" alt="..." />
                 </div>
                 <div class="carousel-item">
-                    <img src="https://source.unsplash.com/random/500×700/?pizza" class="d-block w-100" alt="..." />
+                    <img src="https://source.unsplash.com/random/500×700/?dessert" class="d-block w-100" alt="..." />
                 </div>
                 <div class="carousel-item">
-                    <img src="https://source.unsplash.com/random/500×700/?burger" class="d-block w-100" alt="..." />
+                    <img src="https://source.unsplash.com/random/500×700/?dinner" class="d-block w-100" alt="..." />
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

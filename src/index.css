@@ -16,4 +16,13 @@ code {
   max-height: 500px;
 }
 
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+  margin: 0 auto;
+  display: block;
+}
+
 
