@@ -1,0 +1,6 @@
+1. docker image
+2. copy image_name
+3.use docker tag command :docker tag expensetracker:1.0 snehalmishra/expensetracker:1.0
+4.replace my username with your username of dockerhub and also change the repo name
+5. use docker push
+6.docker push snehalmishra/expensetracker:1.0
