@@ -7,10 +7,13 @@ const jwt = require("jsonwebtoken");
 const jwtSecret = "dudgeudeuhdddedjjeieeieiwi"
 
 
+
 router.post("/registeruser", [
   body('email').isEmail(),
   body('name').isLength({ min: 5 }),
   body('password', 'incorrect password').isLength({ min: 6 })], async (req, res) => {
+
+    const navigate = useNavigate();
 
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
@@ -27,6 +30,7 @@ router.post("/registeruser", [
         location: req.body.location
       });
       res.json({ success: true });
+      navigate('/login');
     } catch (error) {
       console.error(error);
       res.status(500).json({ success: false, error: 'Error registering user' });
