@@ -3,12 +3,11 @@ const app = express();
 const port = 5000;
 const connectToMongoDB = require('./db');
 const Router = require('./Routes/RegisterUser');
+const FoodItems = require('./Routes/Fooddata')
 
 connectToMongoDB();
 
-app.get('/', (req, res) => {
-  res.send('Hello World');
-});
+
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
@@ -19,6 +18,10 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 app.use('/api', Router);
+app.use('/api', FoodItems);
+app.get('/', (req, res) => {
+    res.send('Hello World');
+  });
 
 app.use((err, req, res, next) => {
   console.error(err.stack);
